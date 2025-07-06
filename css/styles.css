@@ -1,0 +1,149 @@
+* {
+    font-family: 'Poppins', sans-serif;;
+}
+body {
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(../assets/images/bg-intro-mobile.png);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    color: white;
+    font-size: x-large;
+    margin: 70px 40px 20px 40px;
+}
+.first {
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 16px;
+    margin-bottom: 4rem;
+}
+
+#form {
+    margin-top: 20px;
+}
+.container {
+    box-sizing: border-box;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 20px auto 50px auto;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+input { 
+    display: block;
+    width: 240px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+input:focus {
+    border: 1px solid hsl(248, 32%, 49%);
+    outline-color: hsl(248, 32%, 49%);
+}
+::placeholder {
+    font-weight: bold;
+}
+.hide-placeholder::placeholder {
+    color: transparent;
+}
+.color-placeholder::placeholder {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+}
+
+.blue-button {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 70px;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.green-button {
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.second {
+    color: hsl(246, 25%, 77%);
+    font-size: xx-small;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.second a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+.error-message {
+    color: hsl(0, 100%, 74%);
+    margin-top: 6px;
+    font-size: 10px;
+    text-align: right;
+    font-style: italic;
+}
+input.error {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Query for larger screens */
+@media (min-width: 1025px) {
+    body {
+        background-image: url(../assets/images/bg-intro-desktop.png);
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 4rem;
+    }
+    h1, .first {
+        margin-left: 0;
+    }
+    
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0 15rem;
+    }
+    .text-container {
+        text-align: left;
+        padding-right: 70px;
+    }
+
+    .blue-button, .container {
+        width: 450px;
+    }
+    
+    input {
+        width: 370px;
+        padding-left: 30px;
+    }
+}
