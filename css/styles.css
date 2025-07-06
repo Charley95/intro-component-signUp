@@ -1,5 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;;
+    box-sizing: border-box;
 }
 body {
     background-color: hsl(0, 100%, 74%) ;
@@ -24,23 +25,31 @@ h1 {
 #form {
     margin-top: 20px;
 }
+
 .container {
     box-sizing: border-box;
-    width: 300px;
-    height: 400px;
+    width: 327px;
     background-color: white;
     margin: 20px auto 50px auto;
-    border-radius: 8px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 15px 15px;
     box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.first-input {
+    margin-top: 20px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 10px;
 }
 input { 
     display: block;
-    width: 240px;
-    height: 45px;
+    width: 279px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
     border-radius: 5px;
     padding-left: 15px;
     border: 1px solid hsl(246, 25%, 77%);
@@ -66,7 +75,7 @@ input:focus {
     border-radius: 8px;
     border: none;
     margin-bottom: 5px;
-    width: 300px;
+    width: 327px;
     height: 70px;
     cursor: pointer;
     padding-left: 50px;
@@ -78,10 +87,9 @@ input:focus {
     background-color: hsl(154, 59%, 51%);
     color: white;
     border: none;
-    width: 100%;
+    width: 279px;
     height: 50px;
     cursor: pointer;
-    margin-top: 20px;
 }
 .second {
     color: hsl(246, 25%, 77%);
@@ -99,9 +107,14 @@ input:focus {
     font-size: 10px;
     text-align: right;
     font-style: italic;
+    padding-right: 15px;
 }
 input.error {
     border: 1px solid hsl(0, 100%, 74%);
+    background-image: url("../assets/images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 24px 24px;
 }
 .attribution { 
     font-size: 11px;
@@ -119,8 +132,8 @@ input.error {
         background-image: url(../assets/images/bg-intro-desktop.png);
     }
     h1 {
-        font-size: 50px;
-        line-height: 4rem;
+        font-size: 40px;
+        line-height: 3rem;
     }
     h1, .first {
         margin-left: 0;
@@ -131,19 +144,32 @@ input.error {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        margin: 0 15rem;
+        margin: 0 7rem;
     }
     .text-container {
         text-align: left;
         padding-right: 70px;
+        width: 525px;
     }
 
     .blue-button, .container {
-        width: 450px;
+        width: 540px;
+    }
+    .green-button {
+        width: 460px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 540px;
     }
     
     input {
-        width: 370px;
-        padding-left: 30px;
+        box-sizing: border-box;
+        width: 460px;
+    }
+    .error-message {
+        padding-right: 30px; /* Match input's padding-left */
     }
 }
