@@ -1,175 +1,207 @@
 * {
-    font-family: 'Poppins', sans-serif;;
-    box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  ;
+  box-sizing: border-box;
 }
+
 body {
-    background-color: hsl(0, 100%, 74%) ;
-    background-image: url(../assets/images/bg-intro-mobile.png);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(../assets/images/bg-intro-mobile.png);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 h1 {
-    color: white;
-    font-size: x-large;
-    margin: 70px 40px 20px 40px;
+  color: white;
+  font-size: x-large;
+  margin: 70px 40px 20px 40px;
 }
+
 .first {
-    color: white;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 16px;
-    margin-bottom: 4rem;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 16px;
+  margin-bottom: 4rem;
 }
 
 #form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .container {
-    box-sizing: border-box;
-    width: 327px;
-    background-color: white;
-    margin: 20px auto 50px auto;
-    border-radius: 10px;
-    padding: 15px 15px;
-    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  width: 327px;
+  background-color: white;
+  margin: 20px auto 50px auto;
+  border-radius: 10px;
+  padding: 15px 15px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .first-input {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 .input-group {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 10px;
 }
-input { 
-    display: block;
-    width: 279px;
-    height: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid hsl(246, 25%, 77%);
+
+input {
+  display: block;
+  width: 279px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid hsl(246, 25%, 77%);
 }
+
 input:focus {
-    border: 1px solid hsl(248, 32%, 49%);
-    outline-color: hsl(248, 32%, 49%);
+  border: 1px solid hsl(248, 32%, 49%);
+  outline-color: hsl(248, 32%, 49%);
 }
+
 ::placeholder {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 .hide-placeholder::placeholder {
-    color: transparent;
+  color: transparent;
 }
+
 .color-placeholder::placeholder {
-    color: hsl(0, 100%, 74%);
-    font-style: italic;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
 }
 
 .blue-button {
-    background-color: hsl(248, 32%, 49%);
-    color: white;
-    border-radius: 8px;
-    border: none;
-    margin-bottom: 5px;
-    width: 327px;
-    height: 70px;
-    cursor: pointer;
-    padding-left: 50px;
-    padding-right: 50px;
-    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 5px;
+  width: 327px;
+  height: 70px;
+  cursor: pointer;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .green-button {
-    border-radius: 5px;
-    background-color: hsl(154, 59%, 51%);
-    color: white;
-    border: none;
-    width: 279px;
-    height: 50px;
-    cursor: pointer;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  width: 279px;
+  height: 50px;
+  cursor: pointer;
 }
+
+.green-button:hover {
+  background-color: hsl(154, 59%, 61%);
+}
+
 .second {
-    color: hsl(246, 25%, 77%);
-    font-size: xx-small;
-    margin-left: 35px;
-    margin-right: 35px;
+  color: hsl(246, 25%, 77%);
+  font-size: xx-small;
+  margin-left: 35px;
+  margin-right: 35px;
 }
+
 .second a {
-    text-decoration: none;
-    color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
 }
+
 .error-message {
-    color: hsl(0, 100%, 74%);
-    margin-top: 6px;
-    font-size: 10px;
-    text-align: right;
-    font-style: italic;
-    padding-right: 15px;
+  color: hsl(0, 100%, 74%);
+  margin-top: 6px;
+  font-size: 10px;
+  text-align: right;
+  font-style: italic;
+  padding-right: 15px;
 }
+
 input.error {
-    border: 1px solid hsl(0, 100%, 74%);
-    background-image: url("../assets/images/icon-error.svg");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-size: 24px 24px;
+  border: 1px solid hsl(0, 100%, 74%);
+  background-image: url("../assets/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 24px 24px;
 }
-.attribution { 
-    font-size: 11px;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 /* Media Query for larger screens */
 @media (min-width: 1025px) {
-    body {
-        background-image: url(../assets/images/bg-intro-desktop.png);
-    }
-    h1 {
-        font-size: 40px;
-        line-height: 3rem;
-    }
-    h1, .first {
-        margin-left: 0;
-    }
-    
-    .main-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0 7rem;
-    }
-    .text-container {
-        text-align: left;
-        padding-right: 70px;
-        width: 525px;
-    }
+  body {
+    background-image: url(../assets/images/bg-intro-desktop.png);
+  }
 
-    .blue-button, .container {
-        width: 540px;
-    }
-    .green-button {
-        width: 460px;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        width: 540px;
-    }
-    
-    input {
-        box-sizing: border-box;
-        width: 460px;
-    }
-    .error-message {
-        padding-right: 30px; /* Match input's padding-left */
-    }
+  h1 {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  h1,
+  .first {
+    margin-left: 0;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 7rem;
+  }
+
+  .text-container {
+    text-align: left;
+    padding-right: 70px;
+    width: 525px;
+  }
+
+  .blue-button,
+  .container {
+    width: 540px;
+  }
+
+  .green-button {
+    width: 460px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 540px;
+  }
+
+  input {
+    box-sizing: border-box;
+    /* this ensures input width is consistent */
+    width: 460px;
+  }
+
+  .error-message {
+    padding-right: 30px;
+    /* Match input's padding-left */
+  }
 }
